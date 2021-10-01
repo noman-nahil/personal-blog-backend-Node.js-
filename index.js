@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-app.get("/hello", (req, res) => res.send("Hello"))
+app.get("/hello", (req, res) => res.send("Hello !!!"))
 app.post("/hello", (req, res) => res.send(`Post ${req.body.name}`))
 
 app.get("/hello/:name", (req, res) => res.send(`Hello ${req.params.name}`))
